@@ -1,0 +1,10 @@
+@mixin propiedadesPrincipales ($bg-color,$colorLetra,$padding,$margin){
+    background-color: $bg-color;
+    color:$colorLetra ;
+    padding:$padding ;
+    margin:$margin ;
+
+
+
+    
+}

@@ -1,0 +1,39 @@
+.navbar{
+    background-image:linear-gradient($gradient-primario, $gradient-secundario) ;
+    .navbar-brand{
+        font-size: 30px;
+    }
+    
+    .marca{
+        height: 70px;      
+        .logo {
+            margin-left: 5px;
+            margin-bottom: 10px;
+            animation-name: logo;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            }
+    } 
+    #navbarSupportedContent{
+    margin-top:100px;
+    }
+    .nav-link{
+        margin: 10px;
+    }
+    @keyframes logo {
+        0%{
+            transform: rotate(10deg);
+            transform: translate(0px,-40px);
+        }
+        40%{
+            transform: rotate(15deg);
+        }
+        60%{
+            transform: rotate(-15deg);
+        }
+        100%{
+            transform:rotate(0deg);
+        }
+    }
+
+}

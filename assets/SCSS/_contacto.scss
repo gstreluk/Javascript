@@ -1,0 +1,14 @@
+.formulario{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    @include propiedadesPrincipales(rgb(204, 204, 204),black,10px,10px);
+    .boton {
+        box-shadow: 5px 4px 15px -4px #000000;
+        margin: 10px;
+        border-radius: map-get($boton, radio);
+    }
+    .boton:active{
+        box-shadow: 5px 4px 7px -4px #000000;
+    }
+}
+

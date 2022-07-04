@@ -1,0 +1,87 @@
+.publicidad {
+    background-image: url(../img/publicidad2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content:center;  
+    button{
+        margin-top: 20px;
+
+    } 
+    div{
+        width: 300px;
+        overflow:visible;
+    }
+
+}
+.btn{
+    border-radius: map-get($boton , radio);
+    border-color:map-get($boton , borde-color );
+    color: map-get($boton, color);
+}
+.introduccion {
+    background-color:darkgrey;
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0%;
+}
+
+.curso_cat{
+    height: 300px;
+    border: solid 1px;
+    text-align: center;
+    border-radius: 5px;
+    @include propiedadesPrincipales(#bb9696,rgb(248, 244, 244),3px,0);
+    .btn{
+        @extend.btn;
+        padding: map-get($boton, padding);
+        background-color:rgb(221, 106, 12);
+    }
+}
+
+.btn:hover{
+        background-color:rgb(11, 38, 190);
+        color: white;
+    }
+.servicios_cat{
+    flex-wrap:wrap;
+}
+.radial{
+    background-image:url(../img/radial.jpg);
+    background-size: cover;
+}
+.off{
+    background-image: url(../img/header4.jpg);
+    background-size: cover;
+}
+.artistica{
+    background-image: url(../img/artistica2.jpg);
+    background-size: cover;
+    background-position: 5px;
+}
+.oratoria{
+    background-image: url(../img/oratoria2.jpg);
+    background-size: cover;
+    background-position: 5px;
+}
+.form_cursos{
+    width: 400px;
+    background-color: black;
+    margin-top: 0px;
+}
+.boton_info{
+        @extend.btn;
+        padding: map-get($boton, padding);
+        background-color:rgb(221, 106, 12);
+        justify-content: center;
+        align-items: center;
+    }
+
+
