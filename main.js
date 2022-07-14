@@ -100,24 +100,24 @@ let boton1 = document.getElementById("micro")
       boton1.addEventListener("click", respuestaClick1)
       function respuestaClick1(){
         let compras = document.getElementById("compras")
-        compras.innerText ="Producto: \nMicrófono HIGH ELECTRIC CONDERSER \n $ 7.000 \nCod.270" 
+        compras.innerText ="Micrófono HIGH ELECTRIC CONDERSER \n $ 7.000 \nCod.270" 
       }
 
 let boton2 = document.getElementById("panel")
 boton2.addEventListener("click", respuestaClick2)
 function respuestaClick2() {
     let compras = document.getElementById("compras")
-    compras.innerText ="Producto: \nCabina De Grabacion Panel Acustico 5 Tramos Portatil \n $ 4.500 \nCod.150" 
+    compras.innerText ="Cabina De Grabacion Panel Acustico 5 Tramos Portatil \n $ 4.500 \nCod.150" 
 }
 let boton3 = document.getElementById("kit")
 boton3.addEventListener("click", respuestaClick3)
 function respuestaClick3(){
     let compras = document.getElementById("compras")
-    compras.innerText ="Producto: \nKit Microfono Profesional Condenser Con Brazo + Phanton 20hz \n $ 15.000 \nCod.203" 
+    compras.innerText ="Kit Microfono Profesional Condenser Con Brazo + Phanton 20hz \n $ 15.000 \nCod.203" 
 }
 let boton4 = document.getElementById("auriculares")
 boton4.addEventListener("click", respuestaClick4)
 function respuestaClick4(){
     let compras = document.getElementById("compras")
-    compras.innerText ="Producto: \nAuriculares inalámbricos Sony WH-CH510 negro \n $ 5.500 \nCod.150" 
+    compras.innerText ="Auriculares inalámbricos Sony WH-CH510 negro \n $ 5.500 \nCod.150" 
 }
