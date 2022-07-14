@@ -1,5 +1,5 @@
 // Tienda Web
-
+/* 
 let nombre = prompt ("ingrese su nombre");
 
 alert ("Hola"+" "+nombre+" "+"bienvenido a la tienda web");
@@ -85,11 +85,11 @@ productoselegidos.forEach(item => {
 
     mensaje += "Producto: "+ item.producto + "Precio: "+item.precio + "Codigo: "+item.codigo
 
-});
+}); */
 
  
 
-alert(mensaje)
+//alert(mensaje)
 
 let compras = document.getElementById("productos")
 compras[0].innerText = "Microfonos"
