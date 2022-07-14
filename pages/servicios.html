@@ -59,45 +59,56 @@
         <h1>ESCUELA DE LOCUCION Y PRODUCCIONES</h1>
     </header>
     <main class="d-flex">
+        <div class="justify-content-around d-flex m-2" >
+            <div class="card mx-4" style="width: 20rem; height: 30rem;">
+                <select class="m-3" name="filtro" id="productos">
+                    <option id="producto1" value="M"></option>
+                    <option id="producto2" value="T"></option>
+                    <option id="producto3" value="N"></option>
+                </select>
+                <button class="m-2" id="clickFiltro">Buscar</button>
+                <div id="compras"></div>
+            </div>
+        </div>
         <div class="servicios_cat justify-content-around d-flex m-2">    
-            <div class="card mx-4" style="width: 20rem;">
+            <div class="card mx-4 w-25" style="width: 20rem;">
                 <img src="../assets/img/microfono.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex row">
                 <h5 class="card-title">Micrófono</h5>
                 <p class="card-text">Micrófono HIGH ELECTRIC CONDERSER BM800KIT</p>
                 <p>$ 7.000</p>
                 <p>Cod. 270</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary" id="micro">Comprar</button>
                 </div>
             </div>
-            <div class="card" style="width: 20rem;">
+            <div class="card w-25" style="width: 20rem;">
                 <img src="../assets/img/panel_acustico.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex row">
                     <h5 class="card-title">Panel acústico</h5>
                     <p class="card-text">Cabina De Grabacion Panel Acustico 5 Tramos Portatil Estudio</p>
                     <p>$ 4.500</p>
                     <p>Cod. 150</p>
-                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" class="btn btn-primary" id="panel">Comprar</button>
                 </div>
             </div>
-            <div class="card" style="width: 20rem;">
+            <div class="card w-25" style="width: 20rem;">
                 <img src="../assets/img/kit de grabacion.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex row">
                     <h5 class="card-title">Kit de grabación</h5>
                     <p class="card-text">Kit Microfono Profesional Condenser Con Brazo + Phanton 20hz</p>
                     <p>$ 15.000</p>
                     <p>Cod. 203</p>
-                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" class="btn btn-primary" id="kit">Comprar</button>
                 </div>
             </div>
-            <div class="card mx-3" style="width: 20rem;">
+            <div class="card mx-3 w-25" style="width: 20rem;">
                 <img src="../assets/img/auriculares.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex row">
                     <h5 class="card-title">Auriculares</h5>
                     <p class="card-text">Auriculares inalámbricos Sony WH-CH510 negro</p>
                     <p>$ 5.500</p>
                     <p>Cod. 105</p>
-                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" class="btn btn-primary" id="auriculares" >Comprar</button>
                 </div>
             </div>
         </div>    
