@@ -32,7 +32,7 @@ function mostrarArticulos(){
             <p >${producto.nombre}</p>
             <p>$${producto.precio}</p>
             <p>${producto.codigo}</p>
-            <p><a href="#" class="btn btn-primary" onclick="${producto.id}">Comprar</a><p/>`;
+            <p><a href="#" class="btn btn-primary" onclick="agregarCarrito(${producto.id})">Comprar</a><p/>`;
         }
         document.getElementById("articulos").innerHTML = contenido;
     }
@@ -68,6 +68,7 @@ function agregarCarrito(id){
     productos_carrito.push(producto);
     guardarArticulosCarrito(productos_carrito);
     actualizarBotonCarrito();
+    mostrarArticulosCarrito();
 
 }
 function mostrarArticulosCarrito(){
