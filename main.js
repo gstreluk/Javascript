@@ -32,10 +32,20 @@ function mostrarArticulos(){
             <p >${producto.nombre}</p>
             <p>$${producto.precio}</p>
             <p>${producto.codigo}</p>
-            <p><a href="#" class="btn btn-primary" onclick="${producto.id}">Comprar</a><p/>`;
+            <p><a href="#" class="btn btn-primary" onclick="agregarCarrito(${producto.id})">Comprar</a><p/>`;
         }
         document.getElementById("articulos").innerHTML = contenido;
     }
+function confirmarProducto(){
+    Swal.fire({
+        position: '',
+        icon: 'success',
+        title: 'Agregaste un producto al carrito!',
+        showConfirmButton: false,
+        timer: 2000
+      })
+
+}    
 
 function actualizarBotonCarrito(){
     let productos= obtenerArticulosCarrito();
@@ -68,6 +78,8 @@ function agregarCarrito(id){
     productos_carrito.push(producto);
     guardarArticulosCarrito(productos_carrito);
     actualizarBotonCarrito();
+    confirmarProducto();
+    mostrarArticulosCarrito();
 
 }
 function mostrarArticulosCarrito(){
