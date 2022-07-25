@@ -80,7 +80,6 @@ function agregarCarrito(id){
     actualizarBotonCarrito();
     confirmarProducto();
     mostrarArticulosCarrito();
-
 }
 function mostrarArticulosCarrito(){
     let  productos = obtenerArticulosCarrito();
