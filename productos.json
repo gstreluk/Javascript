@@ -1,0 +1,9 @@
+[
+    {"id":1,"imagen":"microfono.jpg" , "nombre": "Micrófono HIGH ELECTRIC CONDERSER", "precio":7000, "codigo": "Cod. 101" },
+    {"id":2,"imagen":"panel_acustico.jpg" ,  "nombre": "Cabina De Grabacion Panel Acustico 5 Tramos Portatil Estudio", "precio":4500, "codigo":"Cod. 102" },
+    {"id":3,"imagen":"MICRO_inalambrico.jpg" ,  "nombre": "Microfonos inalambricos", "precio": 11000, "codigo":"Cod. 103" },
+    {"id":4,"imagen":"kit_de_grabacion.jpg" ,  "nombre": "Kit Microfono Profesional Condenser Con Brazo + Phanton", "precio": 15000, "codigo":"Cod. 104" },
+    {"id":5,"imagen":"auriculares.jpg" ,  "nombre": "Auriculares inalámbricos Sony WH-CH510 negro", "precio": 5500, "codigo":"Cod. 105" },
+    {"id":6,"imagen":"libro.jpg" ,  "nombre": "Libro - Aula De Locución de Blanch, Margarita / Lázaro, Patrícia", "precio": 3500, "codigo":"Cod. 106 " }
+
+]

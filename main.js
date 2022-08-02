@@ -23,6 +23,9 @@ function guardarArticulosCarrito(productos){
 
 
 function mostrarArticulos(){
+/* fetch('./productos.json')
+.then((response) => response.json())
+.then((contenido) => { */
         let productos= obtenerArticulosLS();
         let contenido = "";
 
