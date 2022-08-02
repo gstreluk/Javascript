@@ -1,4 +1,4 @@
-const productos = [
+/* const productos = [
                     {id:1,imagen:"microfono.jpg" , nombre: "Micrófono HIGH ELECTRIC CONDERSER", precio:7000, codigo: "Cod. 101", },
                     {id:2,imagen:"panel_acustico.jpg" ,  nombre: "Cabina De Grabacion Panel Acustico 5 Tramos Portatil Estudio", precio:4500, codigo:"Cod. 102" },
                     {id:3,imagen:"MICRO_inalambrico.jpg" ,  nombre: "Microfonos inalambricos", precio: 11000, codigo:"Cod. 103" },
@@ -6,7 +6,7 @@ const productos = [
                     {id:5,imagen:"auriculares.jpg" ,  nombre: "Auriculares inalámbricos Sony WH-CH510 negro", precio: 5500, codigo:"Cod. 105" },
                     {id:6,imagen:"libro.jpg" ,  nombre: "Libro - Aula De Locución de Blanch, Margarita / Lázaro, Patrícia", precio: 3500, codigo:"Cod. 106 " }
 
-                ]
+                ] */
  
 function obtenerArticulosLS(){
     return JSON.parse(localStorage.getItem("articulos"))|| [];
@@ -22,14 +22,15 @@ function guardarArticulosCarrito(productos){
 }
 
 
-function mostrarArticulos(){
-/* fetch('./productos.json')
+//function mostrarArticulos(){
+fetch('/productos.json')
 .then((response) => response.json())
-.then((contenido) => { */
-        let productos= obtenerArticulosLS();
-        let contenido = "";
+.then((contenido) => {
+    console.log(contenido)
+       /*  let productos= obtenerArticulosLS();
+        let contenido = ""; */
 
-        for (const producto of productos){
+        for (const producto of contenido){
             contenido += `<img src=../assets/img/${producto.imagen}><br>
             <h5 >${producto.id}</h5>
             <p >${producto.nombre}</p>
@@ -38,7 +39,7 @@ function mostrarArticulos(){
             <p><a href="#" class="btn btn-primary" onclick="agregarCarrito(${producto.id})">Comprar</a><p/>`;
         }
         document.getElementById("articulos").innerHTML = contenido;
-    }
+    });
 function confirmarProducto(){
     Swal.fire({
         position: '',
@@ -104,5 +105,5 @@ function mostrarArticulosCarrito(){
 
 guardarArticulosLS(productos);
 actualizarBotonCarrito();
-mostrarArticulos();
+//mostrarArticulos();
 mostrarArticulosCarrito();
