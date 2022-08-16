@@ -25,18 +25,21 @@ function guardarArticulosCarrito(productos){
 function mostrarArticulos(){
 /* fetch('/productos.json')
 .then((response) => response.json())
-.then((contenido) => { */
-    //console.log(contenido)
+.then((contenido) => {
+    console.log(contenido) */
       let productos= obtenerArticulosLS();
         let contenido = "";
 
         for (const producto of productos){
-            contenido += `<img src=../assets/img/${producto.imagen}><br>
+            contenido += `
+            <div class="card mx-4">
+            <img src=../assets/img/${producto.imagen}><br>
             <h5 >${producto.id}</h5>
             <p >${producto.nombre}</p>
             <p>$${producto.precio}</p>
             <p>${producto.codigo}</p>
-            <p><a href="#" class="btn btn-primary" title="Agregar al carrito" onclick="agregarCarrito(${producto.id})">Comprar</a><p/>`;
+            <p><a href="#" class="btn btn-primary" title="Agregar al carrito" onclick="agregarCarrito(${producto.id})">Comprar</a><p/>
+            </div>`;
         }
         document.getElementById("articulos").innerHTML = contenido;
     };
@@ -134,7 +137,7 @@ function mostrarArticulosCarrito(){
         <td>${producto.id}</td>
         <td>${producto.nombre}<b> X ${producto.cantidad}</td>
         <td><b>$${precio}</td>
-        <td><a href="#" class="btn btn-danger" title="Eliminar del carrito" onclick="eliminarCarrito(${producto.id})"><img src="/assets/img/Eliminar.png" width="24"></a></td>
+        <td class="text-end"><a href="#" class="btn btn-danger" title="Eliminar del carrito" onclick="eliminarCarrito(${producto.id})"><img src="/assets/img/Eliminar.png" width="24"></a></td>
         </tr>`;
         total += precio;
     }
